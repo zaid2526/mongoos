@@ -18,6 +18,11 @@ const productSchema=Schema({
         type:String,
         require:true
     },
+    userId:{
+        type:Schema.Types.ObjectId,
+        ref:'User', // it define userId is refrence fof Model User.
+        required:true
+    }
     
 });
 
